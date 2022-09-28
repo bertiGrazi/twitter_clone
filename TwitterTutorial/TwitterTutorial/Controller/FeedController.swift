@@ -26,7 +26,7 @@ class FeedController: UIViewController {
         
         let imageView = UIImageView(image: UIImage(named: "twitter_logo_blue"))
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .blue
+        imageView.tintColor = UIColor.twitterBlue
         navigationItem.titleView = imageView
     }
 }

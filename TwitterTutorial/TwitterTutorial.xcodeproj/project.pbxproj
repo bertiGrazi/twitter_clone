@@ -20,6 +20,7 @@
 		B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8428E47C7600C9012C /* ExploreController.swift */; };
 		B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8628E47C9800C9012C /* NotificationsController.swift */; };
 		B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8828E47CE400C9012C /* ConversationsController.swift */; };
+		B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8C28E5021100C9012C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B15B4A8428E47C7600C9012C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		B15B4A8628E47C9800C9012C /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		B15B4A8828E47CE400C9012C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		B15B4A8C28E5021100C9012C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../../Downloads/Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		B15B4A7F28E47AA600C9012C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B15B4A8C28E5021100C9012C /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15B4A4728E47A2100C9012C /* AppDelegate.swift in Sources */,
+				B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */,
 				B15B4A4928E47A2100C9012C /* SceneDelegate.swift in Sources */,
 				B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */,
 				B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */,
