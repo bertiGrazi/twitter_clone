@@ -17,6 +17,10 @@
 		B15B4A6B28E47A2100C9012C /* TwitterTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A6A28E47A2100C9012C /* TwitterTutorialUITests.swift */; };
 		B15B4A6D28E47A2100C9012C /* TwitterTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A6C28E47A2100C9012C /* TwitterTutorialUITestsLaunchTests.swift */; };
 		B15B4A8128E47AED00C9012C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8028E47AED00C9012C /* MainTabController.swift */; };
+		B15B4A8328E47C6500C9012C /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8228E47C6500C9012C /* FeedController.swift */; };
+		B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8428E47C7600C9012C /* ExploreController.swift */; };
+		B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8628E47C9800C9012C /* NotificationsController.swift */; };
+		B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8828E47CE400C9012C /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		B15B4A6A28E47A2100C9012C /* TwitterTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTutorialUITests.swift; sourceTree = "<group>"; };
 		B15B4A6C28E47A2100C9012C /* TwitterTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B15B4A8028E47AED00C9012C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		B15B4A8228E47C6500C9012C /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		B15B4A8428E47C7600C9012C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		B15B4A8628E47C9800C9012C /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		B15B4A8828E47CE400C9012C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				B15B4A8028E47AED00C9012C /* MainTabController.swift */,
+				B15B4A8228E47C6500C9012C /* FeedController.swift */,
+				B15B4A8428E47C7600C9012C /* ExploreController.swift */,
+				B15B4A8628E47C9800C9012C /* NotificationsController.swift */,
+				B15B4A8828E47CE400C9012C /* ConversationsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +323,10 @@
 			files = (
 				B15B4A4728E47A2100C9012C /* AppDelegate.swift in Sources */,
 				B15B4A4928E47A2100C9012C /* SceneDelegate.swift in Sources */,
+				B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */,
+				B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */,
+				B15B4A8328E47C6500C9012C /* FeedController.swift in Sources */,
+				B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */,
 				B15B4A8128E47AED00C9012C /* MainTabController.swift in Sources */,
 				B15B4A5128E47A2100C9012C /* TwitterTutorial.xcdatamodeld in Sources */,
 			);
