@@ -17,8 +17,13 @@ class ExploreController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
+        configureUI()
     }
     
     //MARK: - Helpers
     
+    func configureUI() {
+        view.backgroundColor = .white
+        navigationItem.title = "Explore"
+    }
 }

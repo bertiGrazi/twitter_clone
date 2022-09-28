@@ -16,6 +16,7 @@ class MainTabController: UITabBarController {
         super.viewDidLoad()
 
         configureViewControllers()
+        uiTabBarSettings()
     }
     
     //MARK: - Helpers
@@ -23,17 +24,16 @@ class MainTabController: UITabBarController {
     func configureViewControllers() {
         let feed = FeedController()
         let nav1 = templeateNavigationController(image: UIImage(systemName: "house"), rootViewController: feed)
-        
+
         let explore = ExploreController()
         let nav2 = templeateNavigationController(image: UIImage(systemName: "magnifyingglass"), rootViewController: explore)
-        
+
         let notifications = NotificationsController()
         let nav3 = templeateNavigationController(image: UIImage(systemName: "heart"), rootViewController: notifications)
-        
+
         let conversations = ConversationsController()
         let nav4 = templeateNavigationController(image: UIImage(systemName: "envelope"), rootViewController: conversations)
-        
-        //set on TabBar
+
         setViewControllers([nav1, nav2, nav3, nav4], animated: true)
     }
     
@@ -43,5 +43,17 @@ class MainTabController: UITabBarController {
         nav.navigationBar.barTintColor = .white
         nav.navigationItem.largeTitleDisplayMode = .always
         return nav
+    }
+    
+    func uiTabBarSettings() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        tabBar.standardAppearance = appearance
+        if #available(iOS 15.0, *) {
+            tabBar.scrollEdgeAppearance = appearance
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
