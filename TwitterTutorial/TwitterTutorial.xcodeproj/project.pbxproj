@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B15B4A4728E47A2100C9012C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A4628E47A2100C9012C /* AppDelegate.swift */; };
 		B15B4A4928E47A2100C9012C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A4828E47A2100C9012C /* SceneDelegate.swift */; };
-		B15B4A4E28E47A2100C9012C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15B4A4C28E47A2100C9012C /* Main.storyboard */; };
 		B15B4A5128E47A2100C9012C /* TwitterTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A4F28E47A2100C9012C /* TwitterTutorial.xcdatamodeld */; };
 		B15B4A5328E47A2100C9012C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15B4A5228E47A2100C9012C /* Assets.xcassets */; };
 		B15B4A5628E47A2100C9012C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15B4A5428E47A2100C9012C /* LaunchScreen.storyboard */; };
@@ -44,7 +43,6 @@
 		B15B4A4328E47A2100C9012C /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15B4A4628E47A2100C9012C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15B4A4828E47A2100C9012C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B15B4A4D28E47A2100C9012C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B15B4A5028E47A2100C9012C /* TwitterTutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterTutorial.xcdatamodel; sourceTree = "<group>"; };
 		B15B4A5228E47A2100C9012C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15B4A5528E47A2100C9012C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				B15B4A7928E47A6800C9012C /* Model */,
 				B15B4A4628E47A2100C9012C /* AppDelegate.swift */,
 				B15B4A4828E47A2100C9012C /* SceneDelegate.swift */,
-				B15B4A4C28E47A2100C9012C /* Main.storyboard */,
 				B15B4A5228E47A2100C9012C /* Assets.xcassets */,
 				B15B4A5428E47A2100C9012C /* LaunchScreen.storyboard */,
 				B15B4A5728E47A2100C9012C /* Info.plist */,
@@ -296,7 +293,6 @@
 			files = (
 				B15B4A5628E47A2100C9012C /* LaunchScreen.storyboard in Resources */,
 				B15B4A5328E47A2100C9012C /* Assets.xcassets in Resources */,
-				B15B4A4E28E47A2100C9012C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B15B4A4C28E47A2100C9012C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B15B4A4D28E47A2100C9012C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B15B4A5428E47A2100C9012C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -488,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -510,7 +498,7 @@
 				INFOPLIST_FILE = TwitterTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,7 +526,7 @@
 				INFOPLIST_FILE = TwitterTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
