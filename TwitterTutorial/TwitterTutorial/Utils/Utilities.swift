@@ -32,7 +32,7 @@ class Utilities {
                          paddingLeft: 8, paddingBottom: 8)
         
         dividerView.anchor(left: imageView.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor,
-                           paddingLeft: 8, height: 0.75)
+                           paddingLeft: 2, height: 0.75)
         
         return view
     }
