@@ -74,12 +74,18 @@ class LoginController: UIViewController {
     
     @objc
     func handleShowSignUp() {
-        print("Show sign up")
+        let myVC = RegistrationController()
+//
+//        let navCon = UINavigationController(rootViewController: myVC)
+//        navCon.modalPresentationStyle = .fullScreen
+//        present(navCon, animated: true)
+        
+        navigationController?.pushViewController(myVC, animated: true)
     }
     
     @objc
     func handleLogin() {
-        print("Handle login here")
+        print(123)
     }
     
     //MARK: Helpers
