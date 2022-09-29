@@ -23,6 +23,7 @@
 		B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8C28E5021100C9012C /* Extensions.swift */; };
 		B15B4A9028E5073800C9012C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8F28E5073800C9012C /* LoginController.swift */; };
 		B15B4A9228E507B800C9012C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A9128E507B800C9012C /* RegistrationController.swift */; };
+		B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F80B5428E512D7000E8DAF /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B15B4A8C28E5021100C9012C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../../Downloads/Extensions.swift; sourceTree = "<group>"; };
 		B15B4A8F28E5073800C9012C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B15B4A9128E507B800C9012C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		B1F80B5428E512D7000E8DAF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B15B4A8C28E5021100C9012C /* Extensions.swift */,
+				B1F80B5428E512D7000E8DAF /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */,
 				B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */,
 				B15B4A8328E47C6500C9012C /* FeedController.swift in Sources */,
+				B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */,
 				B15B4A9228E507B800C9012C /* RegistrationController.swift in Sources */,
 				B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */,
 				B15B4A8128E47AED00C9012C /* MainTabController.swift in Sources */,
