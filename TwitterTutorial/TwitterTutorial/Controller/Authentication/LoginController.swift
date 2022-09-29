@@ -54,7 +54,7 @@ class LoginController: UIViewController {
     }()
     
     private let dontHaveAccountButton: UIButton = {
-        let button = Utilities().attributedButton("Don't have an account", " Sign Up")
+        let button = Utilities().attributedButton("Don't have an account?", " Sign Up")
         button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         return button
     }()
@@ -74,12 +74,7 @@ class LoginController: UIViewController {
     
     @objc
     func handleShowSignUp() {
-        let myVC = RegistrationController()
-//
-//        let navCon = UINavigationController(rootViewController: myVC)
-//        navCon.modalPresentationStyle = .fullScreen
-//        present(navCon, animated: true)
-        
+        let myVC = RegistrationController()        
         navigationController?.pushViewController(myVC, animated: true)
     }
     
