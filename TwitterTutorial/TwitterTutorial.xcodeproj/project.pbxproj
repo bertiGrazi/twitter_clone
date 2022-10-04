@@ -27,6 +27,7 @@
 		B15B4A9028E5073800C9012C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8F28E5073800C9012C /* LoginController.swift */; };
 		B15B4A9228E507B800C9012C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A9128E507B800C9012C /* RegistrationController.swift */; };
 		B1D572D528E730880090B3D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D572D428E730880090B3D8 /* GoogleService-Info.plist */; };
+		B1D572D728E762D60090B3D8 /* Consants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D572D628E762D60090B3D8 /* Consants.swift */; };
 		B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F80B5428E512D7000E8DAF /* Utilities.swift */; };
 		B1FAC57D28E72593005496FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1FAC57C28E72592005496FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		B15B4A8F28E5073800C9012C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B15B4A9128E507B800C9012C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		B1D572D428E730880090B3D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1D572D628E762D60090B3D8 /* Consants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consants.swift; sourceTree = "<group>"; };
 		B1F80B5428E512D7000E8DAF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B1FAC57C28E72592005496FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8396921320A8BA0BFBA8C22 /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +242,7 @@
 			children = (
 				B15B4A8C28E5021100C9012C /* Extensions.swift */,
 				B1F80B5428E512D7000E8DAF /* Utilities.swift */,
+				B1D572D628E762D60090B3D8 /* Consants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */,
 				B15B4A4928E47A2100C9012C /* SceneDelegate.swift in Sources */,
 				B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */,
+				B1D572D728E762D60090B3D8 /* Consants.swift in Sources */,
 				B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */,
 				B15B4A8328E47C6500C9012C /* FeedController.swift in Sources */,
 				B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */,
