@@ -106,40 +106,35 @@ class RegistrationController: UIViewController {
         guard let fullName = fullNameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
         
-        let storageRef = Storage.storage().reference()
+        guard let imageDate = profileImage.jpegData(compressionQuality: 0.3) else { return }
+        let storageRef = STORAGE_PROFILE_IMAGES.child("img/\(UUID().uuidString).jpg")
         
-        //Turn our image into data
-        let imageData = profileImage.jpegData(compressionQuality: 0.8)
-        guard imageData != nil else { return }
-        
-        //Specify the file path and name
-        let fileRef = storageRef.child("images/\(UUID().uuidString).jpg")
-        
-        //Upload that data
-        let uploadTask = fileRef.putData(imageData!, metadata: nil) { metadata, error in
-            //Check for error
-            if error == nil && metadata != nil {
-                print("Oi")
+        storageRef.putData(imageDate, metadata: nil) { meta, error in
+            storageRef.downloadURL { url, err in
+                guard let profileURL = url?.absoluteString else { return }
+                
+                Auth.auth().createUser(withEmail: email, password: password) { autoDataResul, error in
+                    if let error = error {
+                        print("DEBUG: Error is \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    guard let uid = autoDataResul?.user.uid else { return }
+                    
+                    let values = ["email": email,
+                                  "username": username,
+                                  "fullname": fullName,
+                                  "profileURL": profileURL
+                                ]
+                    
+                    Database.database().reference().child("users").updateChildValues(values) { (error, ref) in
+                        print("DEBUG: Sucessfuly update user information ...")
+                    }
+                }
             }
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) { autoDataResul, error in
-            if let error = error {
-                print("DEBUG: Error is \(error.localizedDescription)")
-                return
-            }
-            
-            guard let uid = autoDataResul?.user.uid else { return }
-            
-            let values = ["email": email,
-                          "username": username,
-                          "fullname": fullName,
-                        ]
-            
-            Database.database().reference().child("users").updateChildValues(values) { (error, ref) in
-                print("DEBUG: Sucessfuly update user information ...")
-            }
-        }
+
     }
     
     @objc
