@@ -106,6 +106,23 @@ class RegistrationController: UIViewController {
         guard let fullName = fullNameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
         
+        let storageRef = Storage.storage().reference()
+        
+        //Turn our image into data
+        let imageData = profileImage.jpegData(compressionQuality: 0.8)
+        guard imageData != nil else { return }
+        
+        //Specify the file path and name
+        let fileRef = storageRef.child("images/\(UUID().uuidString).jpg")
+        
+        //Upload that data
+        let uploadTask = fileRef.putData(imageData!, metadata: nil) { metadata, error in
+            //Check for error
+            if error == nil && metadata != nil {
+                print("Oi")
+            }
+        }
+        
         Auth.auth().createUser(withEmail: email, password: password) { autoDataResul, error in
             if let error = error {
                 print("DEBUG: Error is \(error.localizedDescription)")
