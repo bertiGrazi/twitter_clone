@@ -23,9 +23,9 @@
 		B15B4A8528E47C7600C9012C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8428E47C7600C9012C /* ExploreController.swift */; };
 		B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8628E47C9800C9012C /* NotificationsController.swift */; };
 		B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8828E47CE400C9012C /* ConversationsController.swift */; };
-		B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8C28E5021100C9012C /* Extensions.swift */; };
 		B15B4A9028E5073800C9012C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A8F28E5073800C9012C /* LoginController.swift */; };
 		B15B4A9228E507B800C9012C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B4A9128E507B800C9012C /* RegistrationController.swift */; };
+		B1C078FF28EDA059002836DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C078FE28EDA059002836DB /* Extensions.swift */; };
 		B1D572D528E730880090B3D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D572D428E730880090B3D8 /* GoogleService-Info.plist */; };
 		B1D572D728E762D60090B3D8 /* Consants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D572D628E762D60090B3D8 /* Consants.swift */; };
 		B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F80B5428E512D7000E8DAF /* Utilities.swift */; };
@@ -73,9 +73,9 @@
 		B15B4A8428E47C7600C9012C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		B15B4A8628E47C9800C9012C /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		B15B4A8828E47CE400C9012C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
-		B15B4A8C28E5021100C9012C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../../Downloads/Extensions.swift; sourceTree = "<group>"; };
 		B15B4A8F28E5073800C9012C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B15B4A9128E507B800C9012C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		B1C078FE28EDA059002836DB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../../Desktop/Extensions.swift; sourceTree = "<group>"; };
 		B1D572D428E730880090B3D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1D572D628E762D60090B3D8 /* Consants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consants.swift; sourceTree = "<group>"; };
 		B1F80B5428E512D7000E8DAF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 		B15B4A7F28E47AA600C9012C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B15B4A8C28E5021100C9012C /* Extensions.swift */,
+				B1C078FE28EDA059002836DB /* Extensions.swift */,
 				B1F80B5428E512D7000E8DAF /* Utilities.swift */,
 				B1D572D628E762D60090B3D8 /* Consants.swift */,
 			);
@@ -500,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15B4A4728E47A2100C9012C /* AppDelegate.swift in Sources */,
-				B15B4A8D28E5021100C9012C /* Extensions.swift in Sources */,
 				B15B4A4928E47A2100C9012C /* SceneDelegate.swift in Sources */,
 				B15B4A8928E47CE400C9012C /* ConversationsController.swift in Sources */,
 				B1D572D728E762D60090B3D8 /* Consants.swift in Sources */,
@@ -508,6 +507,7 @@
 				B15B4A8328E47C6500C9012C /* FeedController.swift in Sources */,
 				B1F80B5528E512D7000E8DAF /* Utilities.swift in Sources */,
 				B15B4A9228E507B800C9012C /* RegistrationController.swift in Sources */,
+				B1C078FF28EDA059002836DB /* Extensions.swift in Sources */,
 				B15B4A8728E47C9800C9012C /* NotificationsController.swift in Sources */,
 				B15B4A8128E47AED00C9012C /* MainTabController.swift in Sources */,
 				B15B4A5128E47A2100C9012C /* TwitterTutorial.xcdatamodeld in Sources */,
