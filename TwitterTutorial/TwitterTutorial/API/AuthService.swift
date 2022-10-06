@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseAuth
 
 struct AuthCredentials {
     let email: String
@@ -19,6 +20,10 @@ struct AuthCredentials {
 
 struct AuthService {
     static let shared = AuthService()
+    
+    func logUserIn(withEmail email: String, password: String, completion: @escaping(AuthDataResult?, Error?) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+    }
     
     func registerUser(credentials: AuthCredentials, completion: @escaping(Error?, DatabaseReference) -> Void) {
         guard let imageDate = credentials.profileImage.jpegData(compressionQuality: 0.3) else { return }
