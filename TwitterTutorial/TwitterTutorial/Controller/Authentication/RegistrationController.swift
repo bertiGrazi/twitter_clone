@@ -64,7 +64,6 @@ class RegistrationController: UIViewController {
     
     private let usernameTextField: UITextField = {
         let textField = Utilities().textField(withPlaceholder: "Username")
-        textField.isSecureTextEntry = true
         return textField
     }()
     
@@ -106,35 +105,12 @@ class RegistrationController: UIViewController {
         guard let fullName = fullNameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
         
-        guard let imageDate = profileImage.jpegData(compressionQuality: 0.3) else { return }
-        let storageRef = STORAGE_PROFILE_IMAGES.child("img/\(UUID().uuidString).jpg")
+        let credentials = AuthCredentials(email: email, password: password, fullname: fullName, username: username, profileImage: profileImage)
         
-        storageRef.putData(imageDate, metadata: nil) { meta, error in
-            storageRef.downloadURL { url, err in
-                guard let profileURL = url?.absoluteString else { return }
-                
-                Auth.auth().createUser(withEmail: email, password: password) { autoDataResul, error in
-                    if let error = error {
-                        print("DEBUG: Error is \(error.localizedDescription)")
-                        return
-                    }
-                    
-                    guard let uid = autoDataResul?.user.uid else { return }
-                    
-                    let values = ["email": email,
-                                  "username": username,
-                                  "fullname": fullName,
-                                  "profileURL": profileURL
-                                ]
-                    
-                    Database.database().reference().child("users").updateChildValues(values) { (error, ref) in
-                        print("DEBUG: Sucessfuly update user information ...")
-                    }
-                }
-            }
+        AuthService.shared.registerUser(credentials: credentials) { error, red in
+            print("DEBUG: Sign up sucessful..")
+            print("DEBUG: Handle update user interface here..")
         }
-        
-
     }
     
     @objc
