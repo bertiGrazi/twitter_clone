@@ -90,6 +90,9 @@ class LoginController: UIViewController {
             }
             
             print("DEBUG: Sucessfull log in..")
+            
+            let mainTabController = MainTabController()
+            self.navigationController?.pushViewController(mainTabController, animated: true)
         }
     }
     
